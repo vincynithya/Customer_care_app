@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/green"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="15dp"
+        android:textColor="#EE0412"
+        android:text=" "
+        android:id="@+id/textView"
+         />
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="20dp"
+        android:text="EXCEL DATA"
+        android:textColor="#1296D1"
+        android:layout_below="@+id/textView"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:onClick="order"
+        android:layout_marginTop="90dp"/>
+
+    <ImageButton
+        android:id="@+id/imageButton2"
+        android:layout_width="303dp"
+        android:layout_height="374dp"
+        android:layout_marginTop="200dp"
+        android:layout_marginLeft="50dp"
+        app:srcCompat="@drawable/acti1" />
+
+    <Button
+        android:id="@+id/button4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="550dp"
+        android:onClick="e2s"
+        android:textColor="#1296D1"
+        android:text="Converting excel sheet to sqlite database" />
+
+</RelativeLayout>

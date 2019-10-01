@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/green"
+    tools:context=".activity_get_data">
+    <TextView
+        android:id="@+id/textview1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:layout_centerHorizontal="true"
+        android:text="user Id = "
+        android:textSize="26dp"
+        android:textColor="#A70B26"
+        android:layout_marginTop="25dp"
+        android:textAppearance="?android:attr/textAppearanceLarge"/>
+
+    <EditText
+        android:id="@+id/editText1"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textview1"
+        android:layout_centerHorizontal="true"
+        android:ems="10"
+        android:hint="Sim Show Here"
+        android:textSize="26dp"
+        android:textColor="#A70B26"
+        android:gravity="center"
+        android:layout_marginTop="20dp" />
+
+    <EditText
+        android:id="@+id/editText2"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/editText1"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:ems="10"
+        android:inputType="phone"
+        android:textSize="26dp"
+        android:textColor="#A70B26"
+        android:hint="Phonenumber Show Here"
+        android:gravity="center" />
+
+    <EditText
+        android:id="@+id/editText3"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/editText2"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:ems="10"
+        android:textSize="26dp"
+        android:textColor="#A70B26"
+        android:hint="Name Show Here"
+        android:gravity="center" />
+
+    <Button
+        android:id="@+id/button1"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:textSize="26dp"
+        android:textColor="#083D68"
+        android:text="Show Next Record" />
+
+    <Button
+        android:id="@+id/button2"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/button1"
+        android:layout_centerHorizontal="true"
+        android:textSize="26dp"
+        android:textColor="#083D68"
+        android:text="Show Previous Record" />
+
+    <Button
+        android:id="@+id/button8"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:textSize="26dp"
+        android:layout_below="@+id/button2"
+        android:textColor="#083D68"
+
+        android:text="Call" />
+
+    <Button
+        android:id="@+id/button3"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:textSize="26dp"
+        android:textColor="#083D68"
+        android:layout_below="@+id/button8"
+
+        android:onClick="his"
+        android:text="Call History" />
+
+    <Button
+        android:id="@+id/button5"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:textSize="26dp"
+        android:textColor="#083D68"
+        android:layout_below="@+id/button3"
+        android:onClick="recorder"
+        android:text="automatic call recorder" />
+
+</RelativeLayout>

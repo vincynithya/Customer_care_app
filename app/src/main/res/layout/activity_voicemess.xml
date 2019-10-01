@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#4E19AA"
+    tools:context=".voicemess">
+    <TextView
+        android:textStyle="bold"
+        android:textAppearance="?android:textAppearanceLarge"
+        android:text="Auto PlayVoice Message"
+        android:layout_width="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="34dp"
+        android:background="#00BCD4"
+        android:layout_height="wrap_content"
+        android:id="@+id/textView"/>
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="384dp"
+        android:layout_height="423dp"
+        android:layout_below="@+id/textView"
+        android:layout_marginTop="31dp"
+        android:src="@drawable/voice2" />
+
+    <Button
+        android:id="@+id/button7"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="#00BCD4"
+        android:onClick="play"
+        android:layout_below="@+id/imageView"
+        android:text="start" />
+
+    <Button
+        android:id="@+id/button9"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="#00BCD4"
+        android:onClick="stop"
+        android:layout_below="@+id/button7"
+        android:text="stop" />
+
+
+</RelativeLayout>
